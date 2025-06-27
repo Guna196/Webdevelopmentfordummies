@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building a Website for Dummies - Landing Page</title>
+    <title>Web Development for Dummies - Landing Page</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Inter font -->
@@ -32,58 +32,16 @@
                 Learn everything from planning your site to publishing it online.
                 Get started on your digital journey today!
             </p>
-            <!-- This link is still here for direct access if desired before submitting form -->
-            <a href="https://lira.epac.to/DOCS-TECH/Web/Building%20a%20Web%20Site%20for%20Dummies%20-%202nd%20Edition.pdf"
-               target="_blank"
+            <!-- This button now redirects to the registration page -->
+            <a href="register.html"
                class="inline-block mt-4 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 transition duration-300 ease-in-out">
-                Access the PDF Here!
+                Register to Download!
             </a>
         </div>
 
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Get Updates and Your Download Link!</h2>
-        <p class="text-gray-600 mb-6">
-            Enter your details below to receive valuable insights and unlock your download.
-        </p>
-
-        <form id="email-form" class="space-y-4">
-            <div>
-                <label for="name" class="sr-only">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required
-                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out">
-            </div>
-            <div>
-                <label for="email" class="sr-only">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email Address" required
-                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out">
-            </div>
-            <button type="submit"
-                    class="w-full px-6 py-3 bg-green-600 text-white font-semibold rounded-md shadow-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-300 ease-in-out">
-                Submit
-            </button>
-        </form>
-
         <p class="text-sm text-gray-500 mt-6">
-            We respect your privacy. Your information will not be shared.
+            Sign up on the next page to get instant access and future updates.
         </p>
     </div>
-
-    <script>
-        const emailForm = document.getElementById('email-form');
-
-        emailForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-
-            console.log('Form Submitted!');
-            console.log('Name:', name);
-            console.log('Email:', email);
-
-            // In a real application, you would send this data to a server.
-            // For now, we'll simulate success and redirect to the download page.
-            window.location.href = 'download.html'; // Redirect to the download page
-        });
-    </script>
 </body>
 </html>
